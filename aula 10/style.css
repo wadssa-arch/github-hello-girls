@@ -12,13 +12,14 @@ body{
 
 /*Cabeçalho*/
 header{
-    background: linear-gradient(135deg, #e9e519 0%, #cc2d2d 100%);
+    background: url("https://mcd-landings-l-statics.appmcdonalds.com/uploads-live/background_image_3x_mobile_72a9cec9dd.webp") no-repeat center center;
+    background-size:cover;
     color: white;
-    padding: 1rem 0;
     position: fixed;
     width: 100%;
+    height: 35%;
     top: 0;
-    z-index: 100;
+    transition: 10s;
 }
 
 nav{
@@ -31,7 +32,7 @@ nav{
 }
 .menu1{
     max-width: 160px;
-    margin: 10px;
+    margin: 20px;
     display: grid;
     justify-content: space-between;
     align-items:center;
@@ -45,34 +46,36 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding:  2rem;
 }
 
 .cards-container{
     background: linear-gradient(), url();
     background-size:cover;
     background-position:center;
-    height: 90vh;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content: left;
-    text-align:left;
+    text-align:right;
     color:rgb(0, 0, 0);
-    margin-top: 60px;
-    
+    margin-top: 50px;
+
 }
+
 .cards1{
-    padding: 20px;
+    padding: 1rem;
 }
 
 .cards2{
-
-    padding: 80px;
+    padding: 18rem;
 }
+
 
 .cards3{
-    padding: 80px;
+    padding: 1rem;
 }
+
 /*botão*/
 .btn{
     gap: 1.5rem;
@@ -81,6 +84,22 @@ nav{
     flex-wrap:wrap;
     margin-top: 1rem;
     background-color: #eaec74;
-    padding: 5px;
+    padding: 15px;
     transition: all;
+    cursor: pointer;
 }
+iframe {
+  position: relative;
+  top: 260px;   /* continua descendo o vídeo */
+  display: block;
+  margin-left: 20px; /* opcional: dá um espacinho da borda */
+
+}
+
+audio{
+  position: relative;
+  top: 260px;   /* continua descendo o vídeo */
+  display: block;
+  margin-left: 20px; /* opcional: dá um espacinho da borda */
+}
+    
