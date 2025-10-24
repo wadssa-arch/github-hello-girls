@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*pseudoelementos (::before e ::after) para adicionar emojis antes e depois dos títulos, 
+praticando como inserir conteúdo visual diretamente pelo CSS.*/
+
+.h1::before{
+    content: "🗽";
+}
+.h2::after{
+    content: "😀";
+}
+/*grid para organizar os elementos lado a lado dentro do container, 
+definindo duas colunas com grid-template-columns: 1fr 1fr.*/
+
+.container{
+    display:grid;
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+    grid-template-columns: -1fr 1fr ;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+
+.btn{
+    background-color: rgb(177, 96, 231);
+    border-radius:20px;
+    padding: 24px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0,5s ease , transform 0.3s ease;
+}
+
+/*:hover para mudar a cor e aumentar 
+o tamanho quando o mouse passa sobre o botão/*/
+
+.btn:hover{
+    background-color: rgb(215, 163, 250);
+    transform: scale(1.1);
+}
+/*:active para alterar a cor quando o botão é clicado./*/
+
+.btn:active{
+   background-color: blueviolet; 
+}
+/*:focus para destacar o botão com uma borda quando ele é*/
+
+.btn:focus{
+outline: 3px solid black;
+}
+
+
+
+
+
+
